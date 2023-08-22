@@ -1,0 +1,530 @@
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop
+$ cd 21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/bruno/Desktop/21082023-BrunoGa
+llegos/.git/
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ touch main.js index.html
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git add .
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git commit -m "Agregando primeros archivos"
+[master (root-commit) 7516de9] Agregando primeros archivos
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git branch -M main
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/brainmasterlol/21082023-BrunoGall
+egos.git main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin 21082023-BrunoGallegos
+error: src refspec 21082023-BrunoGallegos does not match any
+error: failed to push some refs to 'origin'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push main
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream main main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push main main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push main origin
+error: src refspec origin does not match any
+error: failed to push some refs to 'main'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ pwd
+/c/Users/bruno/Desktop/21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git add .
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin nombre_de_tu_rama
+error: src refspec nombre_de_tu_rama does not match any
+error: failed to push some refs to 'origin'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git remote -v
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ origin
+bash: origin: command not found
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git remote add origin https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 241 bytes | 241.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+ * [new branch]      main -> main
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git checkout feature
+error: pathspec 'feature' did not match any file(s) known to git
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop
+$ cd 21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd Hardware
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Hardware (feature)
+$ touch resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Hardware (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd Software
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Software (feature)
+$ touch resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Software (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd SeguridadInformatica
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/SeguridadInformatica (feature)
+$ touch resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/SeguridadInformatica (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git add .
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git commit -m "Agregando carpetas"
+[feature 7f46325] Agregando carpetas
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git push origin main
+Everything up-to-date
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 372 bytes | 372.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/brainmasterlol/21082023-BrunoGallegos/pull/new/f
+eature
+remote:
+To https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+ * [new branch]      feature -> feature
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git brach main
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git checkout main
+Switched to branch 'main'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ pwd
+/c/Users/bruno/Desktop/21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ mv main.js resumenHardware.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ mv index.html resumenSoftware.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ touch comandos.txt
+  162  git push main origin
+  163  git push -u origin main
+  164  pwd
+  165  git add .
+  166  git push origin nombre_de_tu_rama
+  167  git push origin main
+  168  git remote -v
+  169  origin
+  170  git remote add origin https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+  171* git push origin mai
+  172  git checkout feature
+  173  git checkout -b feature
+  174  mkdir Hardware Software SeguridadInformatica
+  175  cd ..
+  176  cd 21082023-BrunoGallegos
+  177  cd Hardware
+  178  touch resumen.txt
+  179  cd ..
+  180  cd Software
+  181  touch resumen.txt
+  182  cd ..
+  183  cd SeguridadInformatica
+  184  touch resumen.txt
+  185  cd ..
+  186  git add .
+  187  git commit -m "Agregando carpetas"
+  188  git push origin main
+  189  git push origin feature
+  190  git brach main
+  191  git checkout main
+  192  pwd
+  193  mv main.js resumenHardware.txt
+  194  mv index.html resumenSoftware.txt
+  195  touch comandos.txt
+  196  echo "bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop
+$ cd 21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/bruno/Desktop/21082023-BrunoGa
+llegos/.git/
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ touch main.js index.html
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git add .
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git commit -m "Agregando primeros archivos"
+[master (root-commit) 7516de9] Agregando primeros archivos
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (master)
+$ git branch -M main
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/brainmasterlol/21082023-BrunoGall
+egos.git main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin 21082023-BrunoGallegos
+error: src refspec 21082023-BrunoGallegos does not match any
+error: failed to push some refs to 'origin'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push main
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream main main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push main main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push main origin
+error: src refspec origin does not match any
+error: failed to push some refs to 'main'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ pwd
+/c/Users/bruno/Desktop/21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git add .
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin nombre_de_tu_rama
+error: src refspec nombre_de_tu_rama does not match any
+error: failed to push some refs to 'origin'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git remote -v
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ origin
+bash: origin: command not found
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git remote add origin https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 241 bytes | 241.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+ * [new branch]      main -> main
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git checkout feature
+error: pathspec 'feature' did not match any file(s) known to git
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop
+$ cd 21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd Hardware
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Hardware (feature)
+$ touch resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Hardware (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd Software
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Software (feature)
+$ touch resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/Software (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ cd SeguridadInformatica
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/SeguridadInformatica (feature)
+$ touch resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos/SeguridadInformatica (feature)
+$ cd ..
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git add .
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git commit -m "Agregando carpetas"
+[feature 7f46325] Agregando carpetas
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git push origin main
+Everything up-to-date
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 372 bytes | 372.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/brainmasterlol/21082023-BrunoGallegos/pull/new/f
+eature
+remote:
+To https://github.com/brainmasterlol/21082023-BrunoGallegos.git
+ * [new branch]      feature -> feature
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git brach main
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (feature)
+$ git checkout main
+Switched to branch 'main'
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ pwd
+/c/Users/bruno/Desktop/21082023-BrunoGallegos
+
+bruno@DESKTOP-RB2I08I MINGW64 ~/Desktop/21082023-BrunoGallegos (main)
+$ mv main.js res
+echo "$ git commit -m "Agregando primeros archivos"
+  197  $ touch comandos.txtI MINGW64 ~/Desktop/21082023-BrunoGallegos (ma" >> comandos.txt
+  198  [mas
+  199  history
+  200  history 30
+  201  history 40 >> comandos.txt
